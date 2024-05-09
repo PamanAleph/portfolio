@@ -37,6 +37,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Learning Source
 
-1. Text Reveal
-   Vladyslav Dihtiarenko
+1. Text Reveal by Vladyslav Dihtiarenko
    https://www.youtube.com/watch?v=vAp3xL1AY4I

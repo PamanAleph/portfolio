@@ -3,7 +3,7 @@ import React from "react";
 import SplitCharText from "@/utils/SplitCharText";
 import { motion } from "framer-motion";
 
-const name = "Alief";
+const name = "Alief Dev";
 
 const charVariants = {
   hidden: { opacity: 0 },
@@ -17,8 +17,8 @@ function Heading() {
       <motion.h1
         initial="hidden"
         whileInView="reveal"
-        transition={{ staggerChildren: 1 }}
-        className="text-[7rem] md:text-[12rem] uppercase text-[#35353D] text-stroke-3 tracking-widest opacity-70"
+        transition={{ staggerChildren: 0.5 }}
+        className="text-[7rem] md:text-[12rem] uppercase text-[#35353D] text-stroke-3 tracking-widest opacity-70 text-center"
       >
         {nameChars.map((char: string, index: number) => (
           <motion.span

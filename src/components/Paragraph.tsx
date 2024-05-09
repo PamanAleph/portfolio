@@ -1,10 +1,12 @@
 "use client";
 import { useScroll, motion } from "framer-motion";
 import React, { useRef } from "react";
-import ProjectCard from "./ProjectCard";
 
+interface ParagraphProps {
+  value: string;
+}
 
-function ProjectCardSection() {
+function Paragraph({ value }: ParagraphProps) {
   const element = useRef(null);
   const { scrollYProgress }: any = useScroll({
     target: element,
@@ -13,13 +15,13 @@ function ProjectCardSection() {
 
   return (
     <motion.div
-      className="px-10"
+      className="text-justify px-10 font-semibold text-gray-100 text-5xl"
       ref={element}
       style={{opacity: scrollYProgress}}
     >
-      <ProjectCard/>
+      {value}
     </motion.div>
   );
 }
 
-export default ProjectCardSection;
+export default Paragraph;
